@@ -10,6 +10,7 @@ body
 	font-family: "RobotoRegular", sans-serif
 	overflow-x: hidden
 	color: #111111
+	background-color: $main-color
 
 
 .hidden
@@ -32,7 +33,7 @@ h1, h2, h3, h4, h5, h6, .button
 .top-line
 	background-color: $main-color
 	text-align: center
-	border-bottom: lighten($main-color, 20%) 1px solid
+	border-bottom: lighten($main-color, 7%) 1px solid
 	position: relative
 	z-index: 2
 	a
@@ -76,4 +77,112 @@ h1, h2, h3, h4, h5, h6, .button
 							color: $accent-color
 					a
 						padding: 10px 20px
-						color: #ffffff
+						color: #fff
+
+//Top Pannel
+.top-pannel
+	background-color: rgba(lighten($main-color, 2%), .8)
+	color: #ffffff
+	padding: 50px 0
+	position: relative
+	&-content
+		position: relative
+		z-index: 1
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		background-image: url(../img/top-pannel-bg.jpg)
+		z-index: 0
+		opacity: .16
+	&-box
+		h4
+			font-family: "RobotoCondensedRegular", sans-serif
+			font-size: em(15px)
+			margin-top: 0
+			position: relative
+			&::after
+				content: ''
+				height: 1px
+				width: 100%
+				background-color: $accent-color
+				position: absolute
+				left: 0
+				bottom: -9px
+				opacity: .4
+		ul, li
+			padding: 0
+			margin: 0
+			list-style-type: none
+		li
+			display: inline-block
+			max-width: 48%
+			opacity: .35
+			font-size: em(13px)
+			padding: 0 10px 0 22px
+			position: relative
+			&:only-child
+				max-width: 100%
+			.fa
+				font-size: 16px
+				position: absolute
+				left: 0
+				top: 6px
+
+
+.logo
+	img
+		min-width: 100%
+	position: relative
+	top: 3px
+
+.top-phone
+	font-size: em(20px)
+	font-family: "RobotoCondensedRegular", sans-serif
+	margin-top: -3px
+	span
+		font-size: em(12px)
+		opacity: .3
+.top-email
+	font-size: 14px
+	a
+		color: #ffffff
+		text-decoration: underline
+	span
+		opacity: .3
+
+.top-email,
+.top-phone
+	.fa
+		margin-right: 3px
+
+.button
+	color: #111111
+	background-color: $accent-color
+	border-radius: 2px
+	font-size: em(16px)
+	padding: 6px 22px
+	position: relative
+	&::after
+		position: absolute
+		content: ''
+		background-color: darken($accent-color, 10%)
+		width: 100%
+		bottom: 0
+		height: 3px
+		left: 0
+		border-bottom-right-radius: 2px
+		border-bottom-left-radius: 2px
+	&:hover, &:focus
+		text-decoration: none
+		color: #111
+
+	&-small
+		font-size: em(14px)
+		&::after
+			height: 2px
+.top-button
+	margin-top: 22px
