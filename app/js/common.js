@@ -6,23 +6,20 @@ $(function() {
 		delay: 200
 	});
 
-
 	var owl = $(".slider");
 		owl.owlCarousel({
-		loop: true,
+		loop : true,
 		items: 1,
 		itemClass: "slide-wrap",
-		nav: false,
-		navContainer: ""
+		nav: true
 	});
 
-		$(".next").click(function(){
+		$(".next").click(function() {
 			owl.trigger('next.owl.carousel');
 		})
-
-		$(".prev").click(function(){
+		$(".prev").click(function() {
 			owl.trigger('prev.owl.carousel');
-		})
+		});
 
 
 
