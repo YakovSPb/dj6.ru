@@ -210,7 +210,68 @@ body textarea:required:valid
 		float: left
 		margin-right: 14px
 
+.main-foot
+	background-color: #0e0b13
+	padding: 70px 0
+	color: #ffffff
+	.top-button
+		margin:
+			top: 15px
+			bottom: 40px
+	.logo
+		opacity: .4
+	.footer-about
+		opacity: .3
+		font-size: em(13px)
+		margin:
+			top: 28px
+			bottom: 50px
+	.top-pannel-box
+		margin-bottom: 25px
+		li
+			max-width: 100%
+			opacity: .6
+			margin-bottom: 18px
+			font-size: em(13px)
+			display: block
+			transition: all .5s ease
+			&:hover
+				opacity: 1
+				transition: all .5s ease
+				.fa
+					opacity: .8
+			a
+				color: #ffffff
+				text-decoration: underline
+				display: block
+				&:hover
+					text-decoration: none
+					transition: all .5s ease
 
-	
+				.fa
+					top: 3px
+			.fa
+				transition: all .5s ease
+				opacity: .4
+	.footer-menu
+		li
+			margin-bottom: 8px
+.developer
+	margin:
+		top: 80px
+		bottom: 30px
+	a
+		display: inline-block
+		width: 120px
+		color: #ffffff
+		font-size: 14px
+		text-align: left
+		&:hover, &:focus
+			text-decoration: none
+
+		img, span
+			display: block
+
+
 //ALWAYS END
 @import "media"
