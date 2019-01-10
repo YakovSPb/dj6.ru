@@ -1,5 +1,7 @@
 $(function() {
 
+    $(".service-item h4").equalHeights();
+
 	$(".top-line .fs-menu").superfish({
 		cssArrows: false,
 		hoverClass: 'no-class',
