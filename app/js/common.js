@@ -1,6 +1,7 @@
 $(function() {
 
     $(".service-item h4").equalHeights();
+    $(".new-item-text").equalHeights();
 
 	$(".top-line .fs-menu").superfish({
 		cssArrows: false,
