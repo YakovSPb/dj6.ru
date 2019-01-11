@@ -1639,7 +1639,8 @@
                                     href="mailto:emailsender@gmail.com">emailsender@gmail.com</a>
                             </div>
                             <div class="top-button">
-                                <a href="#" class="button button-small">Заказать звонок</a>
+                                <a href="#callback" class="button button-small popup-with-move-anim"
+                                   data-form="Вверхняя форма">Заказать звонок</a>
                             </div>
                         </div>
 
@@ -2117,7 +2118,8 @@
             <div class="col-md-2 col-sm-6">
 
                 <a href="#" class="logo"><img src="img/logo.png" alt="Юрдис"></a>
-                <p class="footer-about">Оценка любого имущества, активов, бизнеса, убытков, оспаривание кадастровой стоимости, ценных бумаг в Москве и Московской области.</p>
+                <p class="footer-about">Оценка любого имущества, активов, бизнеса, убытков, оспаривание кадастровой
+                    стоимости, ценных бумаг в Москве и Московской области.</p>
 
             </div>
             <div class="col-md-3 col-md-push-7 col-sm-6">
@@ -2130,7 +2132,8 @@
                         <span><i class="fa fa-envelope"></i> E-Mail:</span> <a href="mailto:emailsender@gmail.com">emailsender@gmail.com</a>
                     </div>
                     <div class="top-button">
-                        <a href="#" class="button button-small">Заказать звонок</a>
+                        <a href="#callback" class="button button-small popup-with-move-anim" data-form="Нижняя форма">Заказать
+                            звонок</a>
                     </div>
                 </div>
 
@@ -2141,7 +2144,7 @@
                     </a>
                 </div>
             </div>
-                <div class="col-md-6 col-md-offset-1 col-md-pull-3 col-sm-12">
+            <div class="col-md-6 col-md-offset-1 col-md-pull-3 col-sm-12">
                 <div class="row">
                     <div class="col-sm-6">
 
@@ -2173,7 +2176,8 @@
                                 <li><a href="#"><span class="fa fa-check"></span>Оценка недвижимости</a></li>
                                 <li><a href="#"><span class="fa fa-check"></span>Оценка земли</a></li>
                                 <li><a href="#"><span class="fa fa-check"></span>Оценка ущерба</a></li>
-                                <li><a href="#"><span class="fa fa-check"></span>Оспаривание кадастровой стоимости</a></li>
+                                <li><a href="#"><span class="fa fa-check"></span>Оспаривание кадастровой стоимости</a>
+                                </li>
                                 <li><a href="#"><span class="fa fa-check"></span>Оценка инвестиционных проектов</a></li>
                                 <li><a href="#"><span class="fa fa-check"></span>Оценка нематериальных активов</a></li>
                                 <li><a href="#"><span class="fa fa-check"></span>Оценка ценных бумаг</a></li>
@@ -2184,16 +2188,48 @@
 
                 </div>
 
-                </div>
-
             </div>
 
         </div>
+
+    </div>
     </div>
 
 </footer>
 
-<div class="hidden"></div>
+<div class="hidden">
+
+    <form class="popup-form callback zoom-anim-dialog" id="callback">
+
+        <div class="success">Спасибо за заявку!<br/>
+            Наши менеджеры связутся с вами в ближайшее время.</div>
+
+        <!-- Hidden Required Fields -->
+        <input type="hidden" name="project_name" value="Юрдис">
+        <input type="hidden" name="admin_email" value="prospektpro673@gmail.com">
+        <input type="hidden" name="form_subject" value="Новая заявка с сайта Юрдис">
+        <!-- END Hidden Required Fields -->
+
+        <h3>Заказать звонок</h3>
+        <label>
+            <span>Ваше имя:</span>
+            <input type="text" name="Имя" placeholder="Введите ваше имя..">
+        </label>
+        <label>
+            <span>Ваше телефон:</span>
+            <input type="text" name="Телефон" placeholder="Введите ваш телефон..." required>
+        </label>
+        <div class="text-center">
+            <button class="button">Оправить</button>
+        </div>
+
+        <input class="formname" type="hidden" name="Форма">
+
+    </form>
+
+</div>
+
+
 <!--[if lt IE 9]>
 <script src="libs/html5shiv/es5-shim.min.js"></script>
 <script src="libs/html5shiv/html5shiv.min.js"></script>

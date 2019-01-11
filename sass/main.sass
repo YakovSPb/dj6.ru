@@ -6,6 +6,8 @@
 @import "../app/libs/superfish/dist/css/superfish"
 @import "../app/libs/font-awesome/scss/font-awesome"
 @import "../app/libs/jQuery.mmenu/dist/css/jquery.mmenu.all"
+@import "../app/libs/magnific-popup/dist/magnific-popup"
+@import "../app/css/magnific-custom"
 
 *::-webkit-input-placeholder
 	color: #666
@@ -272,6 +274,43 @@ body textarea:required:valid
 		img, span
 			display: block
 
+
+
+.popup-form
+	position: relative
+	h3
+		text-align: center
+	label, input
+		display: block
+		width: 100%
+	label
+		margin-bottom: 12px
+		span
+			font-size: 15px
+			color: #999999
+	input
+		border: $accent-color 4px solid
+		padding: 7px 15px
+	.button
+		margin-top: 20px
+		margin-bottom: 10px
+
+.success
+	position: absolute
+	display: none
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	text-align: center
+	background-color: #fff
+	z-index: 2
+	font-family: "RobotoCondensedBold", sans-serif
+	padding: 30px
+	text-transform: uppercase
+	align-items: center
+	&.visible
+		display: flex
 
 //ALWAYS END
 @import "media"
