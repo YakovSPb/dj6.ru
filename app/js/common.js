@@ -1,5 +1,7 @@
 $(function() {
 
+	$(".slider-wrap").slideDown();
+
 	$('.popup-with-move-anim').magnificPopup({
 		type: 'inline',
 
